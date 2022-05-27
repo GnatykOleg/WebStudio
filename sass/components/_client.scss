@@ -1,0 +1,36 @@
+.client-logo {
+	@extend %list;
+	display: flex;
+	justify-content: center;
+}
+
+.client-logo__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.clients-logo__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: $iconColor;
+
+	border: 1px solid $iconColor;
+	width: 170px;
+	height: 92px;
+	border-radius: 4px;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+		&:focus {
+			color: $accentColor;
+			border-color: $accentColor;
+		}
+}
+
+.clients-logo__icon {
+	fill: currentColor;
+}
+

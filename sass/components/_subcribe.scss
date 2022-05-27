@@ -1,0 +1,35 @@
+.subscribe-foot {
+	padding-top: 72px;
+	
+}
+
+.footer__subscribe-foot {
+	margin-left: auto;
+}
+
+.subscribe-foot__flex {
+	display: flex;
+}
+
+.subscribe-foot__input {
+	padding: 15px 16px;
+
+	font-size: 16px;
+	line-height: 1.25;
+
+	color: rgba(255, 255, 255, 0.6);
+
+	margin-right: 12px;
+
+	width: 358px;
+
+	background-color: transparent;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+}
+
+.subscribe-foot__icon {
+	margin-left: 10px;
+}

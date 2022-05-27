@@ -1,0 +1,37 @@
+.advantage {
+	@extend %list;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.advantage__item {
+	width: 270px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.advantage__card {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: $secondaryBackgroundColor;
+	width: 270px;
+	height: 120px;
+	border-radius: 4px;
+
+	margin-bottom: 30px;
+}
+
+.advantage__tittle {
+	margin-top: 0;
+	margin-bottom: 10px;
+	color: $tittleTextColor;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+}
