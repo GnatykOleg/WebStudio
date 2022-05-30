@@ -4,11 +4,16 @@
 
 .team-card {
 	@extend %list;
-	display: flex;
+	
+	// display: flex;
 }
 
 .team-card__item {
-	width: 270px;
+	
+
+
+	// width: 270px;
+
 	border-radius: 0px 0px 4px 4px;
 	padding-bottom: 30px;
 
@@ -19,13 +24,17 @@
 	0px 1px 1px rgba(0, 0, 0, 0.14),
 	0px 2px 1px rgba(0, 0, 0, 0.2);
 
-	&:not(:last-child) {
-			margin-right: 30px;
-		}
+	// &:not(:last-child) {
+	// 		margin-bottom: 30px;
+	// 	}
 }
 
 .team-card__pic {
 	margin-bottom: 30px;
+
+		// @media screen and (min-width: 480px) {
+		// 		width: 450px;
+		// 	}
 }
 
 .team-card__tittle {

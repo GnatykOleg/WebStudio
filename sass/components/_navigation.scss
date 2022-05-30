@@ -1,12 +1,13 @@
 /*! ------------------------------ОСНОВНАЯ НАВИГАЦИЯ САЙТА------------------- */
 .main-nav {
-	display: flex;
-	align-items: center;
+	// display: flex;
+	// align-items: center;
 }
 
 .site-nav {
 	@extend %list;
-	display: flex;
+
+	// display: flex;
 }
 
 .header__site-nav {
@@ -59,8 +60,9 @@
 /*! ------------------------------КОНТАКТЫ В ХЕДЕРЕ------------------------------- */
 .cont-nav {
 	@extend %list;
-	display: inline-flex;
-	margin-left: auto;
+
+	// display: inline-flex;
+	// margin-left: auto;
 }
 
 .cont-nav__item:not(:last-child) {
@@ -68,9 +70,12 @@
 }
 
 .cont-nav__link {
+	// display: flex;
+	// 	align-items: center;
+
 	color: $primaryTextColor;
-	display: flex;
-	align-items: center;
+
+	
 
 	padding-top: 32px;
 	padding-bottom: 32px;

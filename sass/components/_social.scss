@@ -1,5 +1,6 @@
 .social {
 	@extend %list;
+
 	display: flex;
 	justify-content: center;
 }
@@ -9,9 +10,9 @@
 }
 
 .social__link {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+	// display: inline-flex;
+	// justify-content: center;
+	// align-items: center;
 
 	fill: $iconColor;
 
