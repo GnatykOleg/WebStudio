@@ -68,16 +68,21 @@
 // ФОРМА МОДАЛЬНОГО ОКНА
 
 .modal__tittle {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.15;
-	text-align: center;
+	
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.5;
+		color: $tittleTextColor ;
+		text-align: center;
 
-	color: $tittleTextColor ;
+		margin-bottom: 12px;
 
-	margin-bottom: 12px;
+		width: 370px;
 
-	width: 448px;
+		@media screen and (min-width:1200px) {
+			line-height: 1.2;
+			width: 448px;
+		}
 }
 
 .modal__content {
