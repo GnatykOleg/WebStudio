@@ -877,10 +877,15 @@ body {
 
 .footer-flex {
   padding-bottom: 60px;
-  text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .footer-flex {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .footer-flex {
     display: flex;
     flex-wrap: wrap;
@@ -947,16 +952,40 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__social-foot {
     margin-left: 165px;
     margin-bottom: 102px;
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__social-foot {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-foot {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-foot__flex {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer__subscribe-foot {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe-foot {
+    margin-left: auto;
   }
 }
 
@@ -975,6 +1004,13 @@ body {
 @media screen and (max-width: 1199px) {
   .subscribe-foot__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-foot__input {
+    margin-right: 12px;
+    width: 358px;
   }
 }
 

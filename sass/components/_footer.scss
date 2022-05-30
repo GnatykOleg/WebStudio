@@ -7,12 +7,16 @@
 	padding-bottom: 60px;
 	
 
-	text-align: center;
+	@media screen and (min-width:480px) and (max-width: 1199px) {
+		text-align: center;
+	}
 
-	@media screen and (min-width: 768px) and (max-width:1199px) {
+	@media screen and (min-width: 768px)  {
 		display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+
+
 			
 	}
 	
@@ -91,10 +95,15 @@
 		margin-top: 60px;
 	}
 
-	@media screen and (min-width:768px) {
+	@media screen and (min-width:768px) and (max-width:1199px) {
 		margin-left: 165px;
 		margin-bottom: 102px;
 	}
+
+		@media screen and (min-width:1200px)  {
+			margin-left: 70px;
+			
+		}
 }
 
 

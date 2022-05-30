@@ -3,13 +3,27 @@
 	&__tittle {
 		@extend %secondary-tittle
 	}
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 72px;
+	}
 	
+}
+
+.subscribe-foot__flex {
+	@media screen and (min-width:1200px ) {
+		display: flex;
+	}
 }
 
 .footer__subscribe-foot {
 	@media screen and (max-width:767px) {
 		margin-top: 60px;
 	}
+
+		@media screen and (min-width:1200px) {
+			margin-left: auto;
+		}
 	
 }
 
@@ -20,7 +34,12 @@
 	@media screen and (max-width:1199px) {
 		margin-bottom: 20px;
 	}
-	
+
+	@media screen and (min-width:1200px) {
+		margin-right: 12px;
+		width: 358px;
+	}
+
 	padding: 15px 16px;
 	
 
