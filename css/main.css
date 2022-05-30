@@ -320,6 +320,7 @@ body {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 2px solid #560bce;
 }
 
 @media screen and (min-width: 480px) {
@@ -491,8 +492,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  background-color: #fbff00;
-  outline: 5px solid #ff00b3;
 }
 
 .header {
@@ -605,15 +604,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .advantage {
+  .container__advantage {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantage {
-    display: flex;
+    margin: -30px;
   }
 }
 
@@ -625,22 +619,23 @@ body {
 
 @media screen and (min-width: 768px) {
   .advantage__item {
-    flex-basis: 50%;
+    flex-basis: calc((100% - 4 * 30px) / 2);
+    margin: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage__item {
-    flex-basis: 25%;
+    flex-basis: calc((100% - 8 * 30px) / 4);
   }
 }
 
 .advantage__card {
-  margin-bottom: 30px;
-  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
 }
@@ -653,6 +648,12 @@ body {
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage__tittle {
+    text-align: start;
+  }
 }
 
 .working {
