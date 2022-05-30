@@ -1,0 +1,21 @@
+.main-nav__menu-button {
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background-color: transparent;
+
+	
+}
+
+
+
+.icon-menu-close {
+	@extend %visually-hidden
+
+}
+
+.main-nav__menu-button.is-open .icon-menu-close {
+	@extend %visually-hidden
+}
+

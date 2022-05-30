@@ -81,9 +81,12 @@
 	padding: 24px 20px;
 }
 
-.grid__content--padding {
-	padding-bottom: 60px;
+@media screen and (min-width:768px) and (max-width:1199px) {
+	.grid__content--padding {
+			padding-bottom: 60px;
+		}
 }
+
 
 .grid__tittle {
 	margin-bottom: 4px;

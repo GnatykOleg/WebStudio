@@ -265,6 +265,19 @@ summary {
   padding: 0;
 }
 
+.icon-menu-close, .main-nav__menu-button.is-open .icon-menu-close {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .working__tittle, .team__tittle, .client__tittle {
   margin-bottom: 30px;
   color: #212121;
@@ -334,12 +347,11 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid #560bce;
 }
 
 @media screen and (min-width: 480px) {
@@ -418,17 +430,17 @@ body {
 
 .modal__btn {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   cursor: pointer;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border-color: black;
+  border-color: rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -534,6 +546,14 @@ body {
   padding-bottom: 1px;
 }
 
+.main-nav__menu-button {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
+}
+
 .logo__web {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -552,7 +572,6 @@ body {
   text-decoration: none;
 }
 
-/*! ------------------------------ОСНОВНАЯ НАВИГАЦИЯ САЙТА------------------- */
 .header__site-nav {
   margin-left: 93px;
 }
@@ -1203,8 +1222,10 @@ body {
   padding: 24px 20px;
 }
 
-.grid__content--padding {
-  padding-bottom: 60px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .grid__content--padding {
+    padding-bottom: 60px;
+  }
 }
 
 .grid__tittle {
