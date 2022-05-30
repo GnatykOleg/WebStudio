@@ -334,7 +334,7 @@ body {
 }
 
 .container {
-  min-width: 320px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -752,7 +752,7 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .working {
     display: none;
   }
