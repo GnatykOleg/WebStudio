@@ -1,11 +1,25 @@
 .working {
 	padding-top: 0px;
+
+		&__tittle {
+				@extend %primary-tittle
+			}
+		
+			@media screen and (min-width:1200px) {
+				&__tittle {
+					margin-bottom: 50px;
+		
+					font-size: 36px;
+					line-height: 1.17;
+				}
+			}
+
 }
 
 .working-content {
 	@extend %list;
 	
-	// display: flex;
+	display: flex;
 }
 
 .working-content__item {

@@ -265,6 +265,15 @@ summary {
   padding: 0;
 }
 
+.working__tittle, .team__tittle, .client__tittle {
+  margin-bottom: 30px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+}
+
 :active,
 :hover,
 :focus {
@@ -361,16 +370,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.06em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.primary-tittle {
-  margin-top: 0;
-  margin-bottom: 50px;
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
 }
 
 .secondary-tittle {
@@ -607,7 +606,7 @@ body {
   .container__advantage {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
 }
 
@@ -619,14 +618,15 @@ body {
 
 @media screen and (min-width: 768px) {
   .advantage__item {
-    flex-basis: calc((100% - 4 * 30px) / 2);
-    margin: 30px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantage__item {
-    flex-basis: calc((100% - 8 * 30px) / 4);
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -660,6 +660,18 @@ body {
   padding-top: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .working__tittle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.working-content {
+  display: flex;
+}
+
 .working-content__item {
   position: relative;
 }
@@ -684,6 +696,14 @@ body {
 
 .team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__tittle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .team-card__item {
@@ -714,18 +734,39 @@ body {
   text-align: center;
 }
 
-.client-logo__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .client__tittle {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.clients-logo__icon {
+  fill: currentColor;
+}
+
+@media screen and (min-width: 480px) {
+  .container__client-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.client-logo__item {
+  margin: 15px;
+  flex-basis: calc((100% - 4 * 30px) / 2);
 }
 
 .clients-logo__link {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 210px;
+  height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
-  width: 170px;
-  height: 92px;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -733,10 +774,6 @@ body {
 .clients-logo__link:hover, .clients-logo__link:focus {
   color: #2196f3;
   border-color: #2196f3;
-}
-
-.clients-logo__icon {
-  fill: currentColor;
 }
 
 .footer {
