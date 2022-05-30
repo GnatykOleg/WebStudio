@@ -334,11 +334,11 @@ body {
 }
 
 .container {
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 320px;
   outline: 2px solid #560bce;
 }
 
@@ -1275,14 +1275,12 @@ body {
   fill: transparent;
 }
 
-@media screen and (min-width: 450px) {
-  .checkbox__link {
-    margin-left: 4px;
-    font-size: 12px;
-    line-height: 1.17;
-    text-decoration-line: underline;
-    color: #2196f3;
-  }
+.checkbox__link {
+  margin-left: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  text-decoration-line: underline;
+  color: #2196f3;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1292,11 +1290,9 @@ body {
   }
 }
 
-@media screen and (min-width: 450px) {
-  .checkbox__link--text {
-    font-size: 12px;
-    line-height: 1.17;
-  }
+.checkbox__link--text {
+  font-size: 12px;
+  line-height: 1.17;
 }
 
 @media screen and (min-width: 1200px) {

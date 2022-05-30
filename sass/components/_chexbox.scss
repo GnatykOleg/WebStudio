@@ -39,16 +39,14 @@
 
 .checkbox__link {
 
-	@media screen and (min-width:450px) {
-			
-			margin-left: 4px;
+	margin-left: 4px;
+	
+		font-size: 12px;
+		line-height: 1.17;
+	
+		text-decoration-line: underline;
+		color: $accentColor;
 
-			font-size: 12px;
-			line-height: 1.17;
-
-			text-decoration-line: underline;
-			color: $accentColor;
-		}
 
 	@media screen and (min-width:1200px) {
 		font-size: 14px;
@@ -57,10 +55,9 @@
 }
 
 .checkbox__link--text {
-		@media screen and (min-width:450px) {
-				font-size: 12px;
-				line-height: 1.17;
-			}
+		font-size: 12px;
+			line-height: 1.17;
+	
 		
 			@media screen and (min-width:1200px) {
 				font-size: 14px;
