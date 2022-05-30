@@ -18,9 +18,9 @@
 }
 
 .checkbox__span {
-		// display: flex;
-		// 	align-items: center;
-		// 	justify-content: center;
+		display: flex;
+			align-items: center;
+			justify-content: center;
 
 
 	width: 16px;
@@ -38,13 +38,35 @@
 }
 
 .checkbox__link {
-	margin-left: 4px;
-	font-size: 1.71;
-	line-height: 24px;
 
-	text-decoration-line: underline;
+	@media screen and (min-width:450px) {
+			
+			margin-left: 4px;
 
-	color: $accentColor;
+			font-size: 12px;
+			line-height: 1.17;
+
+			text-decoration-line: underline;
+			color: $accentColor;
+		}
+
+	@media screen and (min-width:1200px) {
+		font-size: 14px;
+		line-height: 1.71;
+	}			
+}
+
+.checkbox__link--text {
+		@media screen and (min-width:450px) {
+				font-size: 12px;
+				line-height: 1.17;
+			}
+		
+			@media screen and (min-width:1200px) {
+				font-size: 14px;
+				line-height: 1.71;
+			}
+
 }
 
 .chexbox__btn {
