@@ -274,6 +274,15 @@ summary {
   text-align: center;
 }
 
+.social-foot__tittle, .subscribe-foot__tittle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 :active,
 :hover,
 :focus {
@@ -335,7 +344,6 @@ body {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: #c6fafa;
   }
 }
 
@@ -354,6 +362,10 @@ body {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 200px;
   min-height: 50px;
   padding-top: 10px;
@@ -370,15 +382,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.06em;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
-.secondary-tittle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #ffffff;
-  margin-bottom: 20px;
-  text-transform: uppercase;
 }
 
 .modal {
@@ -874,13 +877,10 @@ body {
   background-color: #2f303a;
 }
 
-.footer__social-foot {
-  margin-left: 70px;
-}
-
-.cont-nav-foot {
+.footer-flex {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .logo__studio--color {
@@ -891,8 +891,18 @@ body {
   margin-bottom: 20px;
 }
 
+.adress-footer {
+  margin-top: 20px;
+}
+
 .adress-footer__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-footer__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress-footer__link {
@@ -910,25 +920,21 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.social-foot {
-  padding-top: 72px;
-}
-
-.subscribe-foot {
-  padding-top: 72px;
+.footer__social-foot {
+  margin-top: 60px;
 }
 
 .footer__subscribe-foot {
-  margin-left: auto;
+  margin-top: 60px;
 }
 
 .subscribe-foot__input {
   padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 12px;
-  width: 358px;
+  width: 100%;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));

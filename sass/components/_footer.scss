@@ -1,25 +1,24 @@
 .footer {
 	background-color: $primaryBackgroundColor;
 
-	&__social-foot {
-			margin-left: 70px;
-		}
+
 }
 
 .footer-flex {
-	// display: flex;
+	padding-top: 60px;
+	padding-bottom: 60px;
+
+	text-align: center;
+	
 }
 
 .cont-nav-foot {
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .logo__studio--color {
 	color: $whiteColor;
 }
 
-// КОНТАКТЫ
 
 .cont-nav-foot__logo {
 	margin-bottom: 20px;
@@ -28,10 +27,16 @@
 
 .adress-footer {
 	@extend %list;
+
+	margin-top: 20px;
 }
 
 .adress-footer__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
+
+	@media screen and (min-width:1200px) {
+		margin-bottom: 9px;
+	}
 }
 
 .adress-footer__link {
@@ -54,11 +59,18 @@
 	color: rgba(255, 255, 255, 0.6);
 }
 
-// СОЦИАЛЬНЫЕ СЕТИ
+
 
 .social-foot {
-	padding-top: 72px;
+	&__tittle {
+	@extend	%secondary-tittle
 	
+	}
+	
+}
+
+.footer__social-foot {
+	margin-top: 60px;
 }
 
 

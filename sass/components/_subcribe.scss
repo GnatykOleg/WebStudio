@@ -1,27 +1,31 @@
 .subscribe-foot {
-	padding-top: 72px;
+
+	&__tittle {
+		@extend %secondary-tittle
+	}
 	
 }
 
 .footer__subscribe-foot {
-	margin-left: auto;
+	margin-top: 60px;
+	
 }
 
 .subscribe-foot__flex {
-	// display: flex;
+	
 }
 
 .subscribe-foot__input {
 	padding: 15px 16px;
+	margin-bottom: 20px;
 
 	font-size: 16px;
 	line-height: 1.25;
 
 	color: rgba(255, 255, 255, 0.6);
 
-	margin-right: 12px;
 
-	width: 358px;
+	width: 100%;
 
 	background-color: transparent;
 
