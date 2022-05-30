@@ -7,17 +7,22 @@
 }
 
 .footer__subscribe-foot {
-	margin-top: 60px;
+	@media screen and (max-width:767px) {
+		margin-top: 60px;
+	}
 	
 }
 
-.subscribe-foot__flex {
-	
-}
+
 
 .subscribe-foot__input {
+
+	@media screen and (max-width:1199px) {
+		margin-bottom: 20px;
+	}
+	
 	padding: 15px 16px;
-	margin-bottom: 20px;
+	
 
 	font-size: 16px;
 	line-height: 1.25;
@@ -25,7 +30,7 @@
 	color: rgba(255, 255, 255, 0.6);
 
 
-	width: 100%;
+	width: 450px;
 
 	background-color: transparent;
 

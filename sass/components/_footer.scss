@@ -1,22 +1,31 @@
 .footer {
 	background-color: $primaryBackgroundColor;
-
-
 }
 
 .footer-flex {
-	padding-top: 60px;
+
 	padding-bottom: 60px;
+	
 
 	text-align: center;
+
+	@media screen and (min-width: 768px) and (max-width:1199px) {
+		display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			
+	}
 	
 }
 
-.cont-nav-foot {
-}
+
 
 .logo__studio--color {
 	color: $whiteColor;
+}
+
+.cont-nav-foot {
+	padding-top: 60px;
 }
 
 
@@ -64,13 +73,28 @@
 .social-foot {
 	&__tittle {
 	@extend	%secondary-tittle
-	
 	}
+
+	@media screen and (min-width:768px) {
+		padding-top: 65px;
+	}
+
+		@media screen and (min-width:1200px) {
+			padding-top: 75px;
+		}
 	
 }
 
 .footer__social-foot {
-	margin-top: 60px;
+	
+	@media screen and (max-width:767px) {
+		margin-top: 60px;
+	}
+
+	@media screen and (min-width:768px) {
+		margin-left: 165px;
+		margin-bottom: 102px;
+	}
 }
 
 
