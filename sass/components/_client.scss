@@ -28,11 +28,32 @@
 			flex-wrap: wrap;
 			margin: -15px;
 		}
+
+				@media screen and (min-width:768px) {
+					display: flex;
+					flex-wrap: wrap;
+					margin: -15px;
+				}
+
+								@media screen and (min-width:1200px) {
+									display: flex;
+									flex-wrap: wrap;
+									margin: -15px;
+								}
 }
 
 .client-logo__item {
-	margin: 15px;
-	flex-basis: calc((100% - 4 * 30px) / 2);
+	@media screen and (min-width:480px) {
+		margin: 15px;
+			flex-basis: calc((100% - 4 * 15px) / 2);
+	}
+		@media screen and (min-width:768px) {
+			flex-basis: calc((100% - 6 * 15px) / 3);
+		}
+				@media screen and (min-width:1200px) {
+					flex-basis: calc((100% - 12 * 15px) / 6);
+				}
+	
 }
 
 .clients-logo__link {
@@ -42,6 +63,14 @@
 
 	width: 210px;
 	height: 92px;
+
+	@media screen and (min-width:768px) {
+			width: 226px;
+		}
+	
+		@media screen and (min-width:1200px) {
+			width: 170px;
+		}
 
 	color: $iconColor;
 	border: 1px solid $iconColor;
@@ -55,6 +84,9 @@
 			color: $accentColor;
 			border-color: $accentColor;
 		}
+
+								
+
 }
 
 
