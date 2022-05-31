@@ -533,6 +533,7 @@ body {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
   padding-bottom: 1px;
+  max-height: 80px;
 }
 
 .mobile-menu__button {
@@ -605,6 +606,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding: 24px 0px 25px 0px;
+  }
+}
+
 .logo__web {
   color: #2196f3;
   font-family: Raleway, sans-serif;
@@ -621,6 +628,16 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo__studio {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -682,11 +699,17 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: 2px;
     width: 100%;
     height: 4px;
     border-radius: 2px;
     background-color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav_link--current::after {
+    bottom: 1px;
   }
 }
 
@@ -702,6 +725,7 @@ body {
 @media screen and (min-width: 768px) {
   .main-nav {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -716,13 +740,17 @@ body {
     display: flex;
     flex-direction: column-reverse;
     margin-left: 74px;
-    padding-top: 21px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .cont-nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-left: 305px;
+    padding-top: 0px;
   }
 }
 
@@ -732,9 +760,16 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .cont-nav__item {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .cont-nav__item:last-child {
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-nav__item:last-child {
+    margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -763,6 +798,15 @@ body {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .cont-nav__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
   }
 }
