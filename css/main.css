@@ -942,8 +942,22 @@ body {
 @media screen and (min-width: 480px) {
   .hero__tittle {
     width: 360px;
+    font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__tittle {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.5;
+    /* or 136% */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
 }
 
