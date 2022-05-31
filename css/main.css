@@ -717,7 +717,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .site-nav_link--current::after {
-    bottom: 1px;
+    bottom: 0px;
   }
 }
 
