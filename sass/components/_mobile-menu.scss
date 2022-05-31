@@ -3,9 +3,11 @@
 }
 
 .mobile-menu__button {
-
+	position: absolute;
+	z-index: 2;
+	right: 10px;
 	
-	padding: 10px 0px 10px 0px;
+	// padding: 10px 0px 10px 0px;
 	margin: 0;
 	border: none;
 	background-color: transparent;
@@ -14,7 +16,6 @@
 	&.is-open .icon-menu-close {
 	display: block;
 	}
-
 		&.is-open .icon-menu-open {
 			display: none;
 		}
@@ -43,6 +44,8 @@ fill: currentColor;
 
 
 .menu {
+
+	z-index: 1;
 	
 	background-color: $whiteColor;
 
@@ -57,10 +60,10 @@ fill: currentColor;
 		padding: 48px 40px;
 
 			position: absolute;
-			top: 100%;
+			top: 0;
 			left: 0;
-			width: 100%;
-			overflow: scroll;
+			width: 100vw;
+		
 
 	}
 

@@ -340,6 +340,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -537,7 +538,9 @@ body {
 }
 
 .mobile-menu__button {
-  padding: 10px 0px 10px 0px;
+  position: absolute;
+  z-index: 2;
+  right: 10px;
   margin: 0;
   border: none;
   background-color: transparent;
@@ -573,6 +576,7 @@ body {
 }
 
 .menu {
+  z-index: 1;
   background-color: #ffffff;
 }
 
@@ -586,10 +590,9 @@ body {
     display: none;
     padding: 48px 40px;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
-    width: 100%;
-    overflow: scroll;
+    width: 100vw;
   }
 }
 
@@ -597,6 +600,12 @@ body {
   .menu {
     display: flex;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo {
+    padding: 16px 0px 16px 0px;
   }
 }
 
