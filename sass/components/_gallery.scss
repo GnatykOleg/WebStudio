@@ -66,7 +66,11 @@
 
 
 .grid__text-overlay {
-	padding: 63px 24px;
+	@media screen and (min-width: 480px) { padding: 77px 24px;}
+	
+		@media screen and (min-width: 768px) {padding: 32px 24px;}
+	
+		@media screen and (min-width: 1200px) {padding: 37px 24px;}
 
 	font-size: 18px;
 	line-height: 1.55;

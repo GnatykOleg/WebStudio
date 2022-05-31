@@ -22,18 +22,23 @@
     <!--!ШАПКА САЙТА-->
 
     <header class="header">
-      <!-- !ОСНОВНАЯ НАВИГАЦИЯ САЙТА -->
+      <!-- ?ЛОГОТИП WEB-STUDIO -->
+      <div class="container mobile-menu">
+        <a href="./" class="logo link">
+          <span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
+        >
+        <!-- КНОПКА МОБИЛЬНОГО МЕНЮ -->
+        <button type="button" class="mobile-menu__button" data-menu-button>
+          <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+            <use class="icon-menu-open" href="./images/icons.svg#icon-menu"></use>
+            <use class="icon-menu-close" href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
 
-      <div class="header-flex container">
+      <div class="menu container" data-menu>
+        <!-- !ОСНОВНАЯ НАВИГАЦИЯ САЙТА -->
         <nav class="main-nav">
-          <!-- ?ЛОГОТИП WEB-STUDIO -->
-
-          <a href="./" class="logo link">
-            <span class="logo__web">Web</span><span class="logo__studio">Studio</span></a
-          >
-
-          <!-- ?ЛОГОТИП WEB-STUDIO -->
-
           <ul class="site-nav header__site-nav">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link site-nav_link--current">Студия</a>
@@ -43,14 +48,6 @@
             </li>
             <li class="site-nav__item"><a href="./" class="site-nav__link link">Контакты</a></li>
           </ul>
-
-          <!-- <div class="main-nav__menu">меню мобильное</div>
-          <button type="button" class="main-nav__menu-button is-open" data-menu-button>
-            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-              <use class="icon-menu-open" href="./images/icons.svg#icon-menu"></use>
-              <use class="icon-menu-close" href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button> -->
         </nav>
 
         <!-- !КОНТАКТЫ В ХЭДЕРЕ -->

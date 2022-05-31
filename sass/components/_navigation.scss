@@ -2,22 +2,21 @@
 
 .site-nav {
 	@extend %list;
-
-	// display: flex;
 }
 
 .header__site-nav {
-	margin-left: 93px;
+	// margin-left: 93px;
 }
 
 .site-nav__item:not(:last-child) {
-	margin-right: 50px;
+	// margin-right: 50px;
 }
 
 .site-nav__link {
-	position: relative;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	// position: relative;
+
+	// padding-top: 32px;
+	// padding-bottom: 32px;
 
 	color: $tittleTextColor;
 
@@ -37,18 +36,18 @@
 .site-nav_link--current {
 	color: $accentColor;
 
-	&::after {
-			content: '';
-			position: absolute;
-			left: 0;
-			bottom: -2px;
+	// &::after {
+	// 		content: '';
+	// 		position: absolute;
+	// 		left: 0;
+	// 		bottom: -2px;
 	
-			width: 100%;
-			height: 4px;
-			border-radius: 2px;
+	// 		width: 100%;
+	// 		height: 4px;
+	// 		border-radius: 2px;
 	
-			background-color: $accentColor;
-		}
+	// 		background-color: $accentColor;
+	// 	}
 }
 
 
@@ -62,7 +61,7 @@
 }
 
 .cont-nav__item:not(:last-child) {
-	margin-right: 50px;
+	// margin-right: 50px;
 }
 
 .cont-nav__link {
@@ -73,8 +72,8 @@
 
 	
 
-	padding-top: 32px;
-	padding-bottom: 32px;
+	// padding-top: 32px;
+	// padding-bottom: 32px;
 
 	font-weight: 500;
 	line-height: 1.14;
@@ -90,11 +89,11 @@
 
 
 .cont-nav__envelope-icon {
-	margin-right: 10px;
+	// margin-right: 10px;
 	fill: currentColor;
 }
 
 .cont-nav__smartphone-icon {
-	margin-right: 10px;
+	// margin-right: 10px;
 	fill: currentColor;
 }
