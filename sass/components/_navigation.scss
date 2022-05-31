@@ -8,8 +8,12 @@
 	// margin-left: 93px;
 }
 
-.site-nav__item:not(:last-child) {
-	// margin-right: 50px;
+.site-nav__item{
+	@media screen and (max-width:767px) {
+		&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+	}
 }
 
 .site-nav__link {
@@ -20,9 +24,20 @@
 
 	color: $tittleTextColor;
 
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	// font-weight: 500;
+	// line-height: 1.14;
+	// letter-spacing: 0.02em;
+
+	@media screen and (max-width:767px) {
+			font-weight: 500;
+			font-size: 40px;
+			line-height: 1.17;
+			text-align: center;
+			letter-spacing: 0.02em;
+
+			
+
+	}
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
@@ -56,28 +71,25 @@
 .cont-nav {
 	@extend %list;
 
-	// display: inline-flex;
-	// margin-left: auto;
-}
-
-.cont-nav__item:not(:last-child) {
-	// margin-right: 50px;
-}
-
-.cont-nav__link {
-	// display: flex;
-	// 	align-items: center;
-
-	color: $primaryTextColor;
+	margin-top: 300px;
 
 	
+}
 
-	// padding-top: 32px;
-	// padding-bottom: 32px;
+.cont-nav__item {
 
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
+	@media screen and (max-width:767px) {
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+}
+
+
+
+.cont-nav__link {
+	color: $primaryTextColor;
+
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -85,15 +97,80 @@
 		&:focus {
 			color: $accentColor;
 		}
+
+		@media screen and (max-width:767px) {
+			
+				font-weight: 500;
+				font-size: 24px;
+				line-height: 1.17;
+				letter-spacing: 0.02em;
+		}
+}
+
+.cont-nav__link--size {
+	@media screen and (max-width:767px) {
+			font-weight: 500;
+				font-size: 34px;
+				line-height: 1.18;
+				letter-spacing: 0.02em;
+	}
+
+
 }
 
 
 .cont-nav__envelope-icon {
 	// margin-right: 10px;
+	
 	fill: currentColor;
+		display: none;
+
+	@media screen and (min-width:768px) {
+		display: block;
+	}
 }
 
 .cont-nav__smartphone-icon {
 	// margin-right: 10px;
 	fill: currentColor;
+	display: none;
+
+	@media screen and (min-width:768px) {
+			display: block;
+		}
 }
+
+
+// SOCIAL MOBILE
+
+.social-nav {
+@extend %list;
+display: flex;
+
+@media screen and (min-width:768px) {
+	display: none;
+}
+
+}
+
+.social-nav__item {
+	margin-top: 64px;
+
+}
+
+.social-nav__item:not(:last-child) {
+	margin-right: 10px;
+	border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.social-nav__link {
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 1.22;
+		letter-spacing: 0.02em;
+
+		color: $accentColor;
+
+		padding-right: 10px;
+}
+
