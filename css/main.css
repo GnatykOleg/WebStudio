@@ -600,6 +600,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .menu.is-open {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 480px) {
