@@ -1519,6 +1519,7 @@ body {
 }
 
 .backdrop {
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
@@ -1533,6 +1534,10 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .backdrop.is-hidden .hero-modal {
