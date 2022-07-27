@@ -8,4 +8,4 @@
 
 <b>Contains 2 pages - the main page and a gallery of works.</b>
 
-<b>Mobile menu included.</b>
+<b>Mobile menu included!</b>
