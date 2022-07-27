@@ -3,23 +3,15 @@
 }
 
 .footer-flex {
-
 	padding-bottom: 60px;
-	
-
 	@media screen and (min-width:480px) and (max-width: 1199px) {
 		text-align: center;
 	}
-
 	@media screen and (min-width: 768px)  {
 		display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-
-
-			
 	}
-	
 }
 
 .logo__studio--color {
@@ -38,13 +30,11 @@
 
 .adress-footer {
 	@extend %list;
-
 	margin-top: 20px;
 }
 
 .adress-footer__item:not(:last-child) {
 	margin-bottom: 8px;
-
 	@media screen and (min-width:1200px) {
 		margin-bottom: 9px;
 	}
@@ -52,25 +42,18 @@
 
 .adress-footer__link {
 	display: inline-block;
-
 	color: $whiteColor;
-
 	font-style: normal;
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 	&:hover,
 		&:focus {
 			color: $accentColor;
 		}
-
-		
 }
 
 .adress-footer__link--transperant {
 	color: rgba(255, 255, 255, 0.6);
 }
-
-
 
 .social-foot {
 	&__tittle {
@@ -88,16 +71,13 @@
 }
 
 .footer__social-foot {
-	
-	@media screen and (max-width:767px) {
+		@media screen and (max-width:767px) {
 		margin-top: 60px;
 	}
-
 	@media screen and (min-width:768px) and (max-width:1199px) {
 		margin-left: 165px;
 		margin-bottom: 102px;
 	}
-
 		@media screen and (min-width:1200px)  {
 			margin-left: 70px;
 			

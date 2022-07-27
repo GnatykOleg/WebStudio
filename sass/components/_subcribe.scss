@@ -1,9 +1,7 @@
 .subscribe-foot {
-
 	&__tittle {
 		@extend %secondary-tittle
 	}
-
 	@media screen and (min-width: 1200px) {
 		padding-top: 72px;
 	}
@@ -20,39 +18,25 @@
 	@media screen and (max-width:767px) {
 		margin-top: 60px;
 	}
-
 		@media screen and (min-width:1200px) {
 			margin-left: auto;
 		}
-	
 }
 
-
-
 .subscribe-foot__input {
-
 	@media screen and (max-width:1199px) {
 		margin-bottom: 20px;
 	}
-
 	@media screen and (min-width:1200px) {
 		margin-right: 12px;
 		width: 358px;
 	}
-
 	padding: 15px 16px;
-	
-
 	font-size: 16px;
 	line-height: 1.25;
-
 	color: rgba(255, 255, 255, 0.6);
-
-
 	width: 450px;
-
 	background-color: transparent;
-
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;

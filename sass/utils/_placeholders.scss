@@ -3,8 +3,6 @@
  	margin: 0;
  	padding: 0;
  }
-
-
  %visually-hidden {
  	position: absolute;
  	white-space: nowrap;
@@ -17,25 +15,19 @@
  	clip-path: inset(50%);
  	margin: -1px;
  }
-
   %primary-tittle {
   	margin-bottom: 30px;
-
   	color: $tittleTextColor;
-
   	font-weight: 700;
   	font-size: 28px;
   	line-height: 1.18;
   	text-align: center;
   }
-
   %secondary-tittle {
   	font-weight: 700;
   	font-size: 14px;
   	line-height: 1.14;
   	color: $whiteColor;
-
   	margin-bottom: 20px;
-
   	text-transform: uppercase;
   }

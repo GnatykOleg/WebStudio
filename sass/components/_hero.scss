@@ -8,7 +8,6 @@
 	linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/hero/hero-img-m@1x-min.jpg);
 	background-position: center;
-
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
@@ -18,7 +17,6 @@
 						url(../images/hero/hero-img-m@2x-min.jpg);
 			}
 		}
-
 		@media screen and ( min-width: 768px) {
 			& {		
 					background-image:
@@ -68,38 +66,26 @@
 }
 
 .hero__tittle {
-
 	@media screen and ( min-width: 480px ) {
 	width: 360px;
 		font-weight: 900;
 		font-size: 26px;
 		line-height:1.6;
-	
-	
-		
-	}
+				}
 
 		@media screen and (min-width: 1200px) {
 			width: 696px;
 			font-weight: 900;
 			font-size: 44px;
 			line-height: 1.5;
-			/* or 136% */
-		
-			text-align: center;
+					text-align: center;
 			letter-spacing: 0.06em;
 			text-transform: uppercase;
 		}
-	
-
-
-
-	margin-left: auto;
+		margin-left: auto;
 	margin-right: auto;
-
 	margin-bottom: 30px;
-	
-	color: $whiteColor;
+		color: $whiteColor;
 	font-weight: 900;
 	text-align: center;
 	letter-spacing: 0.06em;

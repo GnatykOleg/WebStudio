@@ -7,9 +7,7 @@
 		display: flex;
 		flex-wrap: wrap;
 	margin: -15px;
-
 	}
-
 }
 
 .advantage__item {
@@ -21,42 +19,32 @@
 		@media screen and (min-width:768px) {
 			flex-basis: calc((100% - 4 * 15px) / 2);
 				margin: 15px;
-				
 		}
-
 				@media screen and (min-width:1200px) {
 					flex-basis: calc((100% - 8 * 15px) / 4);
 					margin: 15px;
 				}
-
-		
 }
 
 .advantage__card {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	margin-bottom: 30px;
 	height: 120px;
-
 	background-color: $secondaryBackgroundColor;
 	border-radius: 4px;
 	}
 
 .advantage__tittle {
 	margin-bottom: 10px;
-
 	color: $tittleTextColor;
-
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-align: center;
 	text-transform: uppercase;
-
 	@media screen and (min-width:768px) {
 		text-align: start;
 	}
-
 }

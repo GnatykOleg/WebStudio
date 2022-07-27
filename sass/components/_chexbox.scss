@@ -21,15 +21,10 @@
 		display: flex;
 			align-items: center;
 			justify-content: center;
-
-
 	width: 16px;
 	height: 15px;
-
 	border: 2px solid $tittleTextColor;
-
 	border-radius: 2px;
-
 	margin-right: 7px;
 }
 
@@ -38,16 +33,11 @@
 }
 
 .checkbox__link {
-
 	margin-left: 4px;
-	
 		font-size: 12px;
 		line-height: 1.17;
-	
 		text-decoration-line: underline;
 		color: $accentColor;
-
-
 	@media screen and (min-width:1200px) {
 		font-size: 14px;
 		line-height: 1.71;
@@ -57,13 +47,10 @@
 .checkbox__link--text {
 		font-size: 12px;
 			line-height: 1.17;
-	
-		
 			@media screen and (min-width:1200px) {
 				font-size: 14px;
 				line-height: 1.71;
 			}
-
 }
 
 .chexbox__btn {

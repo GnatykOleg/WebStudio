@@ -1,14 +1,11 @@
 .team {
 	background-color: $secondaryBackgroundColor;
-
 	&__tittle {
 	@extend	%primary-tittle
 	}
-
 		@media screen and (min-width:1200px) {
 			&__tittle {
 				margin-bottom: 50px;
-	
 				font-size: 36px;
 				line-height: 1.17;
 			}
@@ -17,12 +14,9 @@
 
 .team-card {
 	@extend %list;
-
-	
 	@media screen and (min-width: 768px) {
 			display: flex;
 			flex-wrap: wrap;
-
 			margin: -15px;
 		}
 }
@@ -31,21 +25,17 @@
 	&:not(:last-child){@media screen and (max-width: 767px) {
 			margin-bottom: 30px;
 		}}
-
 		@media screen and (min-width: 480px) {
 				padding-bottom: 24px;
 		}
-
 				@media screen and (min-width: 768px) {
 					margin: 15px;
 					flex-basis: calc((100% - 4 * 15px) /2);
 				}
-
 				@media screen and (min-width: 1200px) {
 					padding-bottom: 30px;
 					flex-basis: calc((100% - 8 * 15px) /4);
 				}
-	
 	border-radius: 0px 0px 4px 4px;
 	background-color: $whiteColor;
 	box-shadow: 
@@ -56,24 +46,18 @@
 
 .team-card__pic {
 	margin-bottom: 30px;
-
 	@media screen and (min-width:768px) {
 		width: 354px;
 	}
-
 				@media screen and (min-width:1200px) {
 					width: 270px;
 				}
-
-
 }
 
 .team-card__tittle {
 	margin-top: 0;
 	margin-bottom: 10px;
-
 	color: $tittleTextColor;
-
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
